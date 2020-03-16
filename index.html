@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFO Sightings</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/starfield.css">
+    <link rel="stylesheet" href="static/css/zach_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="icon" href="static/images/alien.png">
+</head>
+<!-- I found that putting these outside the body while not recommended prevented them from being on top of the data but in the background  -->
+<div id="stars"></div>
+<div id="stars2"></div>
+<div id="stars3"></div>
+
+<body>
+    <!-- As a heading -->
+    <nav class="navbar ">
+        <span class="navbar-brand mb-0 h1">Search the Skies</span>
+        <a class="navbar-brand" href="#">
+            <img class="nav-ufo" src="static/images/ufo-2.png" width="30" height="30" alt="">
+        </a>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid background">
+
+        <div class="container">
+
+            <h1 class="lead display-4">UFO Sightings</h1>
+            <p class="display-2">The Truth is Out There
+            </p>
+        </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card" style="width: 15rem;">
+
+                <div class="card-body">
+                    <h5 class="card-title text-center btn btn-block hvr-border-fade" id="filterBtn"><img
+                            src="static/images/rbalien.png" class="card-img-top" alt="...">
+                        Filter Search
+                    </h5>
+                    <form id="UFOForm">
+                        <div class="form-group card-text">
+                            <label for="date">Date</label>
+                            <input type="text" class="form-control" id="date" placeholder="12/15/2010">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" class="form-control" id="city">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="state">State</label>
+                            <input type="text" class="form-control" id="state">
+                        </div>
+                        <div class="form-group">
+                            <label for="shape">Shape</label>
+                            <br>
+                            <select name="shapes" id="shape">
+                                <option value=""></option>
+                                <option value="changing">changing</option>
+                                <option value="chevron">chevron</option>
+                                <option value="cigar">cigar</option>
+                                <option value="circle">circle</option>
+                                <option value="cross">cross</option>
+                                <option value="cylinder">cylinder</option>
+                                <option value="disk">disk</option>
+                                <option value="fireball">fireball</option>
+                                <option value="flash">flash</option>
+                                <option value="formation">formation</option>
+                                <option value="light">light</option>
+                                <option value="other">other</option>
+                                <option value="oval">oval</option>
+                                <option value="sphere">sphere</option>
+                                <option value="teardrop">teardrop</option>
+                                <option value="triangle">triangle</option>
+                                <option value="unknown">unknown</option>
+
+                            </select>
+                        </div>
+
+                        <div class="card-footer bg-transparent ">
+                            <!-- <div class="btn-group" role="group"> <button type="button"
+                                class="btn btn-outline-success">Filter</button> -->
+                        </div>
+                        <button type="button" class="btn btn-outline-danger" id="resetBtn">Reset Table </button>
+                </div>
+            </div>
+            </form>
+
+
+        </div>
+        <div class="col-md-7">
+            <div class="table-wrapper-scroll-y my-custom-scrollbar ">
+                <div class="table-responsive-xs">
+                    <table class="table table-striped">
+                        <tbody class="table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>City</th>
+                                    <th>State</th>
+                                    <th>Country</th>
+                                    <th>Shape</th>
+                                    <th>Duration</th>
+                                    <th>Comments</th>
+                                </tr>
+                            </thead>
+                            <!-- <tbody class="table-striped"></tbody> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- <footer class="footer">
+        <span class="bottom">UFO Sightings</span>
+    </footer> -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="static/js/data.js"></script>
+    <script src="static/js/app.js"></script>
+</body>
+
+
+</html>

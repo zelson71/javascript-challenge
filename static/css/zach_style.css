@@ -1,0 +1,157 @@
+
+.background{
+    position: relative;
+    height: 400px;
+    padding: 100px;
+    margin: 0px;
+    background: black;
+    background-image: url("../images/nasa.jpg");
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-size: cover;
+    color: #618D1B;
+    border-bottom-style: groove;
+    border-bottom-color: #618D1B;
+    border-width: .5rem;
+    text-align: center;
+    
+}
+.display-4 {
+    margin-top: 1rem;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    
+    animation: title 1.2s forwards linear;
+  }
+.display-2{
+  font-size: .5rem;
+  font-family: 'Orbitron', sans-serif;
+  opacity: 0;
+  animation: subtitle 1.2s forwards linear;
+  animation-delay: 1.2s;
+}
+@keyframes title {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    font-size: 5.5rem;
+    opacity: 1;
+  }
+}
+
+@keyframes subtitle {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    font-size: 2.5rem;
+    opacity: 1;
+  }
+}
+
+
+
+.nav-ufo {
+    position: absolute;
+    bottom: 5px;
+    left: 200px;
+    width: 35px;
+    color: white;
+}
+
+.navbar{
+    background-color: black !important;
+    font-family: 'Orbitron', sans-serif; 
+    font-size: 1rem;
+    border-bottom-style: groove; 
+    border-bottom-color: #618D1B;
+    color: white;
+  }
+  .main-html{
+      margin-top: 0rem;
+  }
+  body{
+      background-color: black;
+      /*  prevents odd behavior at text animation during load in */
+      overflow: hidden;
+
+  }
+  .navbar-brand{
+      padding-right: 10rem;
+  }
+
+  .card{
+      background-color:rgba(97, 141, 27,.75);
+      color:cornsilk;
+      margin-top: 1em;
+      width: 8rem;
+  }
+  
+  
+  .card img{
+      width: 2em;
+      height: auto;
+      
+  }
+
+
+  .form-control{
+      width: auto;
+      font-size: .5rem;
+  }
+
+
+.table{
+    background-color:rgba(97, 141, 27,.75);
+    color:cornsilk;
+    /* margin-top: 5em; */
+    max-height: 50px;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: rgba(149, 216, 42, 0.25); 
+ }
+ .footer > .bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    border-top-style: groove; 
+    border-top-color: #618D1B; 
+    font-size: 2rem;
+    text-align: center;
+    color: #618D1B ;
+  }
+  
+  .my-custom-scrollbar {
+    margin-top: 1em;
+    position: relative;
+    height: 425px;
+    overflow: auto;
+    }
+    .table-wrapper-scroll-y {
+    display: block;
+    }
+    .hvr-border-fade {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: box-shadow;
+        transition-property: box-shadow;
+        box-shadow: inset 0 0 0 4px rgb(73, 117, 11), 0 0 1px rgba(0, 0, 0, 0);
+        /* Hack to improve aliasing on mobile/tablet devices */
+    }
+      .hvr-border-fade:hover, .hvr-border-fade:focus, .hvr-border-fade:active {
+        box-shadow: inset 0 0 0 4px rgb(141, 209, 32), 0 0 1px rgba(0, 0, 0, 0);
+        /* Hack to improve aliasing on mobile/tablet devices */
+      }
+      
