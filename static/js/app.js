@@ -1,6 +1,9 @@
 // from data.js
 var tableData = data;
-
+function formatCourseDate(date) {
+    const dateObj = new Date(date + 'T00:00:00');
+    return new Intl.DateTimeFormat('en-US').format(dateObj);
+}
 
 // YOUR CODE HERE!
 // Variables
@@ -32,9 +35,9 @@ datain(data);
 // Filter by attribute
 button.on("click", () => {
     d3.event.preventDefault();
-    var inputDate = inputField1.property("value").trim();
-
-
+    var inputDate = inputField1.property("value").toString();
+    inputDate = formatCourseDate(inputDate);
+    console.log(inputDate)
 
     var inputCity = inputField2.property("value").toLowerCase().trim();
     var inputState = inputField3.property("value").toLowerCase().trim()
